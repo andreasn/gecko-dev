@@ -1050,6 +1050,25 @@ toolbarbutton[sdk-button="true"][cui-areatype="toolbar"] > .toolbarbutton-icon {
   -moz-image-region: rect(128px, 64px, 192px, 0px);
 }
 
+@media (min-resolution: 2dppx) {
+  #identity-popup-icon {
+    list-style-image: url("chrome://browser/skin/identity@2x.png");
+    -moz-image-region: rect(0px, 128px, 128px, 0px);
+  }
+
+  #identity-popup.verifiedDomain > #identity-popup-container > #identity-popup-icon {
+    -moz-image-region: rect(128px, 128px, 256px, 0px);
+  }
+
+  #identity-popup.verifiedIdentity > #identity-popup-container > #identity-popup-icon {
+    -moz-image-region: rect(256px, 128px, 384px, 0px);
+  }
+
+  #identity-popup.chromeUI > #identity-popup-container > #identity-popup-icon {
+    list-style-image: url("chrome://branding/content/icon128.png");
+  }
+}
+
 /* Identity popup body text */
 .identity-popup-description {
   white-space: pre-wrap;
